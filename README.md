@@ -12,3 +12,5 @@
         PayManager.shared.processingResults(url)
         return true
     }
+     
+# 找不到 openssl.h解决方法: Header Search Path 添加 openssl文件夹的上一层路径
