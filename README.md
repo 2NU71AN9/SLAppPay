@@ -1,7 +1,6 @@
 # SLAppPay
 微信支付/支付宝支付
 
-...
 
      func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
          WechatManager.shared.regist("", universalLink: "")
@@ -13,4 +12,3 @@
         PayManager.shared.processingResults(url)
         return true
     }
-...
