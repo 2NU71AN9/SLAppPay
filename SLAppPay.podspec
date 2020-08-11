@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/2NU71AN9/SLAppPay.git", :tag => "v#{s.version}" } #存储库的git地址，以及tag值
   s.source_files  =  "SLAppPay/AppPay/**/*.{h,m,swift}" #需要托管的源代码路径
   #s.resources    = "SLAppPay/AppPay/**/*.a"
-  s.ios.vendored_libraries = "SLAppPay/AppPay/**/*.a"
+  s.vendored_libraries = "SLAppPay/AppPay/**/*.a"
   s.requires_arc = true #是否支持ARC
   s.dependency "HandyJSON"
   s.dependency "PKHUD"
