@@ -36,7 +36,7 @@ extension AliManager {
         order.biz_content.out_trade_no = paymodel.trade_no
         order.biz_content.timeout_express = "30m" //超时时间设置
         order.biz_content.total_amount = paymodel.amount
-        
+
         guard let orderInfo = order.orderInfoEncoded(false),
             let orderInfoEncoded = order.orderInfoEncoded(true) else { return }
         var signedString: String?
@@ -54,7 +54,7 @@ extension AliManager {
             self?.payResults(dic as? [String: Any])
         }
     }
-    
+
     /// 支付结果
     private func payResults(_ dic: [String: Any]?) {
         guard let status = dic?["resultStatus"] as? String else { return }

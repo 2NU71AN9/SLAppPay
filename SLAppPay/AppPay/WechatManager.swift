@@ -12,11 +12,11 @@ import PKHUD
 public class WechatManager: NSObject {
     @objc static let shared = WechatManager()
     private override init() { super.init() }
-    
+
     @objc public func regist(_ appId: String, universalLink: String) {
         WXApi.registerApp(appId, universalLink: universalLink)
     }
-    
+
     @objc func pay(_ model: PayWechatModel?) {
         guard let model = model else { return }
         let req = PayReq()

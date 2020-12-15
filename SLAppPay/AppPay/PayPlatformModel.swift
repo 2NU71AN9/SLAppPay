@@ -14,7 +14,7 @@ class PayPlatformModel: NSObject, HandyJSON {
     var prepare_id: String?
     var ali_param: PayAliModel?
     var we_chat_param: PayWechatModel?
-    
+
     required override init() {
         super.init()
     }
@@ -28,7 +28,7 @@ class PayWechatModel: NSObject, HandyJSON {
     var sign: String?
     var timestamp: UInt32 = 0
     var appid: String?
-    
+
     required override init() {
         super.init()
     }
@@ -44,7 +44,7 @@ class PayAliModel: NSObject, HandyJSON {
     var private_key: String?
     var app_id: String?
     var amount: String?
-    
+
     required override init() {
         super.init()
     }
